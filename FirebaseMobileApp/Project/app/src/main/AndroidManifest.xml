@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.UMC">
+
+        <!-- Activities -->
+        <activity android:name=".ui.SearchDoctorActivity" android:exported="false" />
+        <activity android:name=".ui.EditProfileActivity" android:exported="false" />
+        <activity android:name=".ui.AppointmentHistoryActivity" android:exported="false" />
+        <activity android:name=".ui.BookingActivity" android:exported="false" />
+        <activity android:name=".ui.DoctorDetailActivity" android:exported="false" />
+        <activity android:name=".ui.ForgotPasswordActivity" android:exported="false" />
+        <activity android:name=".ui.ProfileActivity" android:exported="false" />
+        <activity android:name=".ui.AddDoctorActivity" android:exported="false" />
+        <activity android:name=".ui.DeleteDoctorActivity" android:exported="false" />
+        <activity android:name=".ui.FindDoctorBySpecialityActivity" android:exported="false" />
+        <activity android:name=".ui.DoctorListActivity" android:exported="false" />
+        <activity android:name=".ui.HomeActivity" android:exported="false" />
+        <activity android:name=".ui.RegisterActivity" android:exported="false" />
+        <activity android:name=".ui.AdminUserListActivity" />
+        <activity android:name=".ui.AdminUserAppointmentListActivity" />
+        <activity android:name=".ui.AdminAppointmentDetailActivity" />
+        <activity android:name=".ui.SelectSlotActivity" />
+        <activity android:name=".ui.AdminEditDoctorActivity" />
+        <activity android:name=".ui.AdminDoctorListActivity"/>
+        <activity android:name=".ui.NewsDetailActivity"/>
+        <activity android:name=".ui.MomoQrPaymentActivity"/>
+        <activity
+            android:name=".ui.AppointmentDetailActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- QUAN TRỌNG -->
+                <data
+                    android:scheme="umc"
+                    android:host="payment" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.NotificationActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.ChatAIActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.NewsActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.AdminPostNewsActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.AdminChatActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.ChatActivity"
+            android:exported="false"/>
+        <!-- Màn hình khởi động đúng -->
+        <activity
+            android:name=".ui.AdminChatListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

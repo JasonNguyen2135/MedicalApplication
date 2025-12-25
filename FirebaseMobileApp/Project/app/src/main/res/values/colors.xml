@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Màu bạn đang thiếu -->
+    <color name="teal_700">#018786</color>
+
+    <!-- Thêm bộ màu chuẩn luôn -->
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_500">#009688</color>
+
+
+    <color name="primary_variant">#3700B3</color>
+    <color name="secondary">#03DAC6</color>
+
+    <!-- Text màu trắng dùng cho toolbar -->
+
+    <color name="primary_blue">#2196F3</color>
+    <color name="primary_blue_dark">#1976D2</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Nếu cần thêm -->
+    <color name="gray">#808080</color>
+    <color name="primary">#3F51B5</color>
+
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#1E88E5</color>
+    <color name="blue_primary">#1976D2</color>
+    <color name="blue_primary_dark">#0D47A1</color>
+    <color name="blue_primary_light">#BBDEFB</color>
+
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+
+
+</resources>

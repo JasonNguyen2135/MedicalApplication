@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UMC</string>
+    <string name="notification_title">Lịch hẹn sắp tới</string>
+    <string name="notification_content">Bạn có lịch khám vào lúc 9:00 sáng mai.</string>
+    <string name="notification_time">• 2 giờ trước</string>
+    <string name="notification_icon_desc">Biểu tượng thông báo</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="0dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F7">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_doctors"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+   />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpenDoctors"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mở danh sách bác sĩ"
+
+            android:textColor="#FFFFFF"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFindBySpeciality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tìm theo chuyên khoa"
+            android:layout_marginTop="12dp"
+
+            android:textColor="#FFFFFF"/>
+
+        <!-- Optional admin actions kept but hidden by default -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddDoctor"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm bác sĩ"
+            android:visibility="gone"
+
+            android:textColor="#FFFFFF"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDeleteDoctor"
+            android:text="Xóa bác sĩ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>

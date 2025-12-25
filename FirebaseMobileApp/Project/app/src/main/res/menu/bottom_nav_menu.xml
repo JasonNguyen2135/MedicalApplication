@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_dashboard"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="AI Chat" />
+
+    <item
+        android:id="@+id/menu_doctors"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Bác sĩ" />
+
+    <item
+        android:id="@+id/menu_appointments"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="Lịch" />
+
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Tài khoản" />
+
+</menu>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#E5E7EB">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="16dp">
+
+<!-- CATEGORY -->
+<TextView
+    android:id="@+id/tvCategory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_category_chip"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="4dp"
+    android:text="SỨC KHỎE"
+    android:textColor="#2563EB"
+    android:textSize="11sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+<!-- TITLE -->
+<TextView
+    android:id="@+id/tvNewsTitle"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:textColor="#111827"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:maxLines="3"
+    android:ellipsize="end"
+    app:layout_constraintTop_toBottomOf="@id/tvCategory"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+<!-- DESCRIPTION -->
+<TextView
+    android:id="@+id/tvDescription"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:textColor="#4B5563"
+    android:textSize="15sp"
+    android:maxLines="3"
+    android:ellipsize="end"
+    app:layout_constraintTop_toBottomOf="@id/tvNewsTitle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+<!-- DATE -->
+<TextView
+    android:id="@+id/tvDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:textColor="#9CA3AF"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvDescription"/>
+
+<!-- DELETE -->
+<ImageButton
+    android:id="@+id/btnDelete"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:padding="8dp"
+    android:src="@drawable/ic_delete"
+    app:tint="#EF4444"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="@id/tvDate"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>

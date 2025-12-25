@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "70491762460",
+    "project_id": "clinicapp-d18da",
+    "storage_bucket": "clinicapp-d18da.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70491762460:android:118f834d312cd6925dd4d9",
+        "android_client_info": {
+          "package_name": "com.example.umc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBljQ_TttV6EWwGpKRqXwdFav7PHRkGBd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
